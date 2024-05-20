@@ -69,6 +69,11 @@ body{
     justify-content: space-between;
 }
 
+.mobile-nav,
+.menu__close{
+    display: none;
+}
+
 .menu__btn span{
     background-color: #000;
     height: 2px;
@@ -155,28 +160,67 @@ body{
 
 @media (max-width: 906px) {
     .menu__list{
+       transform: translateY(-100%);
        position: absolute;
        top: 0;
        left: 0;
        right: 0;
-       width: 360px;
+       width: 480px;
        margin: 0 auto;
        background-color: #fff;
        display: block;
        text-align: center;
        padding-top: 60px;
     }
+    .menu__list.menu__list--open{
+        transform: translateY(0%);
+    }
     .menu__close-btn{
         position: absolute;
         top: 20px;
         right: 20px;
     }
+    /* menu__list и mobile-nav добавила сама по гайду уходило в правую сторону, а не по центру */
+    .menu__list{
+        padding-left: 0;
+    }
+    /* .mobile-nav{ 
+        padding-right: 35px;
+    } вместе с ним смещается линия, добавила padding-right в  mobile-menu*/
+    .menu__item{ 
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-family: 'Cormorant', serif;
+    } 
+    .mobile-menu{
+        padding-top: 60px;
+        margin: 60px 30px;
+        border-top: 2px solid #f7f2ea;
+        padding-right: 40px;
+    }
+    .mobile-actions{
+        /* переопределила из .ul */
+        padding-inline-start: 0;
+        background-color: #f7f2ea;
+        height: 60px;
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .menu__btn{
         display: flex;
+    }
+    .mobile-nav,
+    .menu__close{
+        display: block;
     }
     .menu{
         order: -1;
         margin-right: 0;
+    }
+    .mobile-menu__item{
+        margin-bottom: 35px;
     }
     .logo{
         margin-left: auto;
@@ -232,6 +276,10 @@ body{
     .logo img{
         width: 40px;
     }
+    .menu__list{
+       width: 360px; 
+    }
+    
 }
 
 @media (max-width: 360px) {
