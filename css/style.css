@@ -23,6 +23,14 @@ ul{
     list-style: none;
 }
 
+.title{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Cormorant', serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
 .container{
     max-width: 1240px;
     margin: 0 auto;
@@ -199,6 +207,9 @@ body{
 
 
 @media (max-width: 1000px) {
+    .title{
+        margin-bottom: 30px;
+    }
     .user-actions__item-search{
       margin-left: 30px;  
     }
@@ -311,9 +322,10 @@ body{
         margin-right: 100px;
     }
     .assortment__list{
-        gap: 0 6px; 
+        /* gap: 0 6px;  */
         flex-wrap: wrap;
       } 
+    
 }
 
 @media (max-width: 680px) {
@@ -353,10 +365,22 @@ body{
     .menu__list{
        width: 360px; 
     }
+    .assortment{
+        margin-bottom: 60px;
+    }
     
 }
 
+@media (max-width: 415px) {
+   .assortment__img{
+        max-width: 170px;
+    } 
+}
+
 @media (max-width: 360px) {
+    .title{
+        margin-bottom: 10px;
+    }
     .logo{
         margin-right: 30px;
     }
@@ -380,6 +404,9 @@ body{
     .blockquote__text{
         max-width: 340px;
         margin-top: 70px;
+        margin-bottom: 80px;
+    }
+    .assortment{
         margin-bottom: 80px;
     }
 }
