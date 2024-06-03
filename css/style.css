@@ -226,6 +226,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 40px 58px;
+    padding-left: 0px;
  }
 
  .main-blog__item{
@@ -391,7 +392,7 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px 49px;
+    gap: 30px 36px;
 }
 
 .prioritise__title{
@@ -447,6 +448,42 @@ body{
     .reviews__item:last-child{
         display: none;
     }
+    .main-blog{
+       padding: 120px 0; 
+    }
+    .main-blog__item-img{
+        max-width: 230px;
+    }
+    .main-blog__item{
+        flex-basis: 460px;
+    }
+    .main-blog__list{
+        gap: 67px 20px;
+    }
+    .main-blog__link{
+        margin-top: 60px;
+    }
+    .mailing-list__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mailing-list{
+        padding: 60px 0;
+    }
+    .mailing-list__title{
+        text-align: center;
+    }
+    .mailing-list__text{
+        text-align: center;
+        flex-basis: 780px;
+    }
+    .prioritise{
+        padding: 120px 0;
+    }
+    .prioritise__list{
+        gap: 30px 210px;
+    }
+    
     }
 
 @media (max-width: 906px) {
