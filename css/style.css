@@ -414,7 +414,44 @@ body{
 
 .footer__inner{
     margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 40px;
 }
+
+.footer__products,
+.footer__company,
+.footer__nav{
+    padding-inline-start: 0px
+}
+
+.footer__social-list{
+    padding-inline-start: 0px;
+}
+
+.footer__products-title,
+.footer__company-title{
+    font-family: 'Cormorant', serif;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.footer__products-item,
+.footer__company-item{
+    margin-bottom: 20px;
+}
+
+.footer__blockquote-text{
+    margin-top: 80px; 
+    font-style: italic;
+    margin-bottom: 20px; 
+}
+
+.footer__blockquote-author{
+    font-size: 12px;
+}
+
+
 
 .footer__bottom{
     display: flex;
@@ -430,6 +467,10 @@ body{
     display: flex;
     gap: 0 20px;
 }
+
+
+
+
 
 
 
