@@ -430,7 +430,9 @@ body{
 }
 
 .footer__products-title,
-.footer__company-title{
+.footer__company-title,
+.footer__contacts-title{
+    font-weight: 400;
     font-family: 'Cormorant', serif;
     font-size: 24px;
     margin-bottom: 50px;
@@ -449,6 +451,56 @@ body{
 
 .footer__blockquote-author{
     font-size: 12px;
+    font-style: normal;
+}
+
+.footer__blockquote-author span{
+    display: block;
+}
+
+.footer__contacts-text{
+    font-family: 'Open sans', sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__nav-logo{
+    margin-right: 40px;
+}
+
+.footer__nav-contacts{
+    margin-top: 20px;
+}
+
+.footer__nav-phone,
+.footer__nav-email{
+    font-size: 13px;
+    position: relative;
+    padding-left: 32px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__nav-phone::before,
+.footer__nav-email::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 22px;
+    height: 16px;
+    background-image: url(../images/mail.svg);
+}
+
+.footer__nav-phone::before{
+    background-image: url(../images/phone.svg);
+    width: 21px;
+    height: 21px;
 }
 
 
